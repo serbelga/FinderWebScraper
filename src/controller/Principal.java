@@ -57,7 +57,9 @@ public class Principal implements Initializable {
         for (int i = 0; i < marcas.length; i++){
             radioMenuItemList.get(i).setText(marcas[i]);
         }
-        exePath = "chromedriver";
+        String os = System.getProperty("os.name").toLowerCase();
+        if (os.contains("mac")) exePath = "chromedriver";
+        else exePath = "chromedriver.exe";
         System.setProperty("webdriver.chrome.driver", exePath);
         options = new ChromeOptions();
         options.addArguments("--start-maximized");
