@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.RadioMenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<?import java.util.ArrayList?>
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Principal">
+    <children>
+        <VBox layoutX="59.0" layoutY="119.0" prefHeight="102.0" prefWidth="141.0">
+            <children>
+                <CheckBox fx:id="fnacCheckBox" mnemonicParsing="false" text="Fnac">
+                    <VBox.margin>
+                        <Insets bottom="10.0" />
+                    </VBox.margin></CheckBox>
+                <CheckBox fx:id="corteinglesCheckBox" mnemonicParsing="false" text="El Corte Inglés" />
+            </children>
+        </VBox>
+        <HBox alignment="CENTER" layoutX="28.0" layoutY="37.0" prefHeight="27.0" prefWidth="272.0">
+            <children>
+                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Artículo">
+                    <HBox.margin>
+                        <Insets right="20.0" />
+                    </HBox.margin>
+                </Text>
+                <ComboBox fx:id="comboBoxArticulo" prefHeight="27.0" prefWidth="201.0" promptText="Seleccione" />
+            </children>
+        </HBox>
+        <Button fx:id="buscarButton" layoutX="85.0" layoutY="259.0" mnemonicParsing="false" onAction="#buscar" text="Buscar" />
+        <HBox alignment="CENTER" layoutX="313.0" layoutY="37.0" prefHeight="27.0" prefWidth="242.0">
+            <children>
+                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Marca">
+                    <HBox.margin>
+                        <Insets right="20.0" />
+                    </HBox.margin>
+                </Text>
+                <MenuButton fx:id="menuButton" mnemonicParsing="false" text="Seleccione">
+                    <items>
+                        <RadioMenuItem fx:id="radioMenuItem1" mnemonicParsing="false" text="Unspecified Action" />
+                        <RadioMenuItem fx:id="radioMenuItem2" mnemonicParsing="false" text="Unspecified Action" />
+                        <RadioMenuItem fx:id="radioMenuItem3" mnemonicParsing="false" text="Unspecified Action" />
+                        <RadioMenuItem fx:id="radioMenuItem4" mnemonicParsing="false" text="Unspecified Action" />
+                        <RadioMenuItem fx:id="radioMenuItem5" mnemonicParsing="false" text="Unspecified Action" />
+                        <RadioMenuItem fx:id="radioMenuItem6" mnemonicParsing="false" text="Unspecified Action" />
+                        <RadioMenuItem fx:id="radioMenuItem7" mnemonicParsing="false" text="Unspecified Action" />
+                        <RadioMenuItem fx:id="radioMenuItem8" mnemonicParsing="false" text="Unspecified Action" />
+                        <RadioMenuItem fx:id="radioMenuItem9" mnemonicParsing="false" text="Unspecified Action" />
+                        <RadioMenuItem fx:id="radioMenuItem10" mnemonicParsing="false" text="Unspecified Action" />
+                        <RadioMenuItem fx:id="radioMenuItem11" mnemonicParsing="false" text="Unspecified Action" />
+                        <RadioMenuItem fx:id="radioMenuItem12" mnemonicParsing="false" text="Unspecified Action" />
+                        <RadioMenuItem fx:id="radioMenuItem13" mnemonicParsing="false" text="Unspecified Action" />
+                        <RadioMenuItem fx:id="radioMenuItem14" mnemonicParsing="false" text="Unspecified Action" />
+                        <RadioMenuItem fx:id="radioMenuItem15" mnemonicParsing="false" text="Unspecified Action" />
+                        <RadioMenuItem fx:id="radioMenuItem16" mnemonicParsing="false" text="Unspecified Action" />
+                        <RadioMenuItem fx:id="radioMenuItem17" mnemonicParsing="false" text="Unspecified Action" />
+                        <RadioMenuItem fx:id="radioMenuItem18" mnemonicParsing="false" text="Unspecified Action" />
+                        <RadioMenuItem fx:id="radioMenuItem19" mnemonicParsing="false" text="Unspecified Action" />
+                        <RadioMenuItem fx:id="radioMenuItem20" mnemonicParsing="false" text="Unspecified Action" />
+                    </items>
+                </MenuButton>
+            </children>
+        </HBox>
+    </children>
+    <fx:define>
+        <ArrayList fx:id="radioMenuItemList">
+            <fx:reference source="radioMenuItem1" />
+            <fx:reference source="radioMenuItem2" />
+            <fx:reference source="radioMenuItem3" />
+            <fx:reference source="radioMenuItem4" />
+            <fx:reference source="radioMenuItem5" />
+            <fx:reference source="radioMenuItem6" />
+            <fx:reference source="radioMenuItem7" />
+            <fx:reference source="radioMenuItem8" />
+            <fx:reference source="radioMenuItem9" />
+            <fx:reference source="radioMenuItem10" />
+            <fx:reference source="radioMenuItem11" />
+            <fx:reference source="radioMenuItem12" />
+            <fx:reference source="radioMenuItem13" />
+            <fx:reference source="radioMenuItem14" />
+            <fx:reference source="radioMenuItem15" />
+            <fx:reference source="radioMenuItem16" />
+            <fx:reference source="radioMenuItem17" />
+            <fx:reference source="radioMenuItem18" />
+            <fx:reference source="radioMenuItem19" />
+            <fx:reference source="radioMenuItem20" />
+        </ArrayList>
+    </fx:define>
+</AnchorPane>

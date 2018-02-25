@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="controller.TableResult"
+            prefHeight="400.0" prefWidth="600.0">
+    <children>
+        <TableView fx:id="tableView" layoutX="10.0" layoutY="30.0" prefHeight="290.0" prefWidth="798.0" AnchorPane.bottomAnchor="30.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="11.0" AnchorPane.topAnchor="30.0">
+            <columns>
+                <TableColumn fx:id="productoColumna" prefWidth="424.00000762939453" text="Producto" />
+                <TableColumn fx:id="marca" prefWidth="91.0" resizable="false" text="Marca" />
+                <TableColumn fx:id="precioCorteIngles" prefWidth="134.0" resizable="false" text="Precio Corte Inglés" />
+                <TableColumn fx:id="precioFnac" prefWidth="109.0" resizable="false" text="Precio Fnac" />
+            </columns>
+        </TableView>
+    </children>
+</AnchorPane>
